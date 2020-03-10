@@ -57,10 +57,10 @@ fi
 
 echo "Completed plugins processing"
 
-echo "Performing permissions fixups"
-chown -R www-data:www-data .
-find . -type d -print0 | xargs -0 chmod 775
-find . -type f -print0 | xargs -0 chmod 664
+# echo "Performing permissions fixups"
+# chown -R www-data:www-data .
+# find . -type d -print0 | xargs -0 chmod 775
+# find . -type f -print0 | xargs -0 chmod 664
 
 echo "Dumping the autoloader"
 composer dump-autoload
