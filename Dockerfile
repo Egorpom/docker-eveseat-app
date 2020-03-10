@@ -16,7 +16,7 @@ RUN mkdir -p /usr/src && cd /usr/src && \
 
 RUN cd /usr/src/seat && \
     php artisan vendor:publish --force --all && \
-    php artisan l5-swagger:generate && \
+    php artisan l5-swagger:generate
     # Fix up the source permissions to be owned by www-data
     # chown -R www-data:www-data /usr/src/seat/
 
